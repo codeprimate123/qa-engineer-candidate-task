@@ -1,0 +1,10 @@
+Brief findings:
+
+- GET method on /posts endpoint works as expected
+- POST method on /posts endpoint fails to add a new post, even thou the return code 
+  implies succesful addition and even a new id is generated for the data entry
+- PUT method on /posts/id endpoint fails to modify the post with given id even thou response implies success
+- DELETE method on posts/id endpoint fails to delete the post with given id even thou response implies success
+
+Considering the purpose of the site the tests are somewhat "naive" as the site is made with immutable data on purpose,
+but for the purpose of the task I pretended the site should behave as expected according to the made requests.
